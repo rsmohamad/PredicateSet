@@ -8,7 +8,7 @@ public class PredicateSet<T> {
     }
 
     public static<T> PredicateSet<T> singleton(T a) {
-        return new PredicateSet<T>(i -> i == a);
+        return new PredicateSet<T>(a::equals);
     }
 
     public PredicateSet<T> union(PredicateSet<T> that) {

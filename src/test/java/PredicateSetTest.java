@@ -51,7 +51,7 @@ public class PredicateSetTest {
             assertTrue(set.contains(0));
             assertFalse(set.contains(1));
 
-            set = set.remove(0);
+            set = set.remove(0).remove(0);
 
             assertFalse(set.contains(0));
             assertFalse(set.contains(1));
